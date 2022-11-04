@@ -1,0 +1,5 @@
+# apparently lintian is unable to handle Windows-style line breaks
+rebar3 source: very-long-line-length-in-source-file *
+
+# there are is no gpg signature to check
+rebar3 source: debian-watch-does-not-check-openpgp-signature

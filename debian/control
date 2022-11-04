@@ -1,0 +1,43 @@
+Source: rebar3
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Uploaders: Philipp Huebner <debalance@debian.org>
+Section: devel
+Priority: optional
+Build-Depends: debhelper-compat (= 13), erlang
+Standards-Version: 4.6.1
+Rules-Requires-Root: no
+Homepage: http://www.rebar3.org/
+Vcs-Browser: https://salsa.debian.org/erlang-team/packages/rebar3
+Vcs-Git: https://salsa.debian.org/erlang-team/packages/rebar3.git
+
+Package: rebar3
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         erlang-asn1:any,
+         erlang-base:any,
+         erlang-common-test:any,
+         erlang-crypto:any,
+         erlang-dev:any,
+         erlang-dialyzer:any,
+         erlang-edoc:any,
+         erlang-eunit:any,
+         erlang-parsetools:any,
+         erlang-reltool:any,
+         erlang-syntax-tools:any,
+         erlang-tools:any
+Recommends: erlang, git
+Enhances: erlang
+Description: Erlang tool to create, develop, and release Erlang libraries and applications
+ Rebar3 is an Erlang tool that makes it easy to create, develop, and release
+ Erlang libraries, applications, and systems in a repeatable manner.
+ Rebar3 will:
+  * respect and enforce standard Erlang/OTP conventions for project structure
+    so they are easily reusable by the community;
+  * manage source dependencies and Erlang packages while ensuring repeatable
+    builds;
+  * handle build artifacts, paths, and libraries such that standard development
+    tools can be used without a headache;
+  * adapt to projects of all sizes on almost any platform;
+  * treat documentation as a feature, and errors or lack of documentation as a
+    bug.

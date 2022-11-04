@@ -1,0 +1,2 @@
+version=4
+https://github.com/weiss/rebar3/releases .+/rebar3-(\d\S+)\.tar\.gz

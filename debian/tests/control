@@ -1,0 +1,5 @@
+Test-Command: DIAGNOSTIC=1 rebar3 help
+Restrictions: allow-stderr, superficial
+
+Test-Command: DIAGNOSTIC=1 rebar3 ct
+Restrictions: allow-stderr, needs-internet

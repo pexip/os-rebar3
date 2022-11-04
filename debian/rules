@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+export DH_VERBOSE=1
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+include /usr/share/dpkg/default.mk
+export ERL_COMPILER_OPTIONS=deterministic
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build
+	export HOME="$$(mktemp -d)" && ./bootstrap && rm -vrf "$$HOME"
+
+override_dh_clean:
+	dh_clean
+	rm -rf _build/bootstrap/
+	rm -rf _build/default/lib/bbmustache/ebin/
+	rm -rf _build/default/lib/certifi/ebin/
+	rm -rf _build/default/lib/cf/ebin/
+	rm -rf _build/default/lib/cth_readable/ebin/
+	rm -rf _build/default/lib/erlware_commons/ebin/
+	rm -rf _build/default/lib/eunit_formatters/ebin/
+	rm -rf _build/default/lib/getopt/ebin/
+	rm -rf _build/default/lib/providers/ebin/
+	rm -rf _build/default/lib/rebar/
+	rm -rf _build/default/lib/relx/ebin/
+	rm -rf _build/default/lib/ssl_verify_fun/ebin/
+	rm -rf _build/prod/
+	rm -rf rebar3
+	rm -rf src/vendored/r3_safe_erl_term.erl

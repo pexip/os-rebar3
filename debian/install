@@ -1,0 +1,4 @@
+_build/prod/bin/rebar3			usr/bin
+priv/shell-completion/bash/rebar3	usr/share/bash-completion/completions
+priv/shell-completion/fish/rebar3.fish	usr/share/fish/completions
+priv/shell-completion/zsh/		usr/share/zsh/functions/Completion/Zsh
