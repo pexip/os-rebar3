@@ -1,4 +1,4 @@
-rebar3 (3.19.0-1pexip1) pexip; urgency=medium
+rebar3 (3.19.0-1pexip1) pexip-bullseye-openssl3; urgency=medium
 
   * Prepare Pexip packaging
 
