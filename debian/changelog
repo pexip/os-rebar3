@@ -1,3 +1,9 @@
+rebar3 (3.19.0-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Thu, 08 Dec 2022 13:54:13 +0000
+
 rebar3 (3.19.0-1) unstable; urgency=medium
 
   * New upstream version 3.19.0

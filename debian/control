@@ -1,6 +1,7 @@
 Source: rebar3
-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
-Uploaders: Philipp Huebner <debalance@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+XSBC-Pexip-Original-Uploaders: Philipp Huebner <debalance@debian.org>
 Section: devel
 Priority: optional
 Build-Depends: debhelper-compat (= 13), erlang
@@ -9,6 +10,7 @@ Rules-Requires-Root: no
 Homepage: http://www.rebar3.org/
 Vcs-Browser: https://salsa.debian.org/erlang-team/packages/rebar3
 Vcs-Git: https://salsa.debian.org/erlang-team/packages/rebar3.git
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bookworm
 
 Package: rebar3
 Architecture: all
